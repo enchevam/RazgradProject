@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 30px;
+  background-color: #e0c9a6;
+  font-family: nexa;
+}
+div.polaroid {
+  width: 300px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #bfbfbf;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+div.rotate_right {
+  float: left;
+  transform: rotate(7deg);
+}
+div.rotate_left {
+  float: left;
+  transform: rotate(-8deg);
+}
+ul {
+  list-style: none;
+  font-family: "Caveat", cursive;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.6;
+  background-color: rgb(51, 48, 48);
+  color: #ffffff;
+  padding: 35px 50px 40px;
+}
+
+header a {
+  text-transform: capitalize;
+  font-weight: 900;
+}
+header ul {
+  font-size: 30px;
+}
+header h2 {
+  text-transform: uppercase;
+  font-family: "Ruslan Display", cursive;
+}
+header .nav {
+  display: flex;
+}
+header .nav li {
+  margin: 0 15px;
+  font-size: 40px;
+}
+header .nav li:first-child {
+  margin-left: 0;
+}
+header .nav li:last-child {
+  margin-right: 0;
+}
+.container {
+  background-color: #f0e4d3;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  border: 1px solid #bfbfbf;
+  padding: 64px;
+  margin-left: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 30px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 150%;
+  box-shadow: 20px 20px 5px rgb(230, 225, 225);
+}
+
+p {
+  font-family: "Bad Script", cursive;
+  font-size: 22px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
